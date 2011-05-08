@@ -1,1 +1,8 @@
-Frameweb
+Frameweb is my basic Zend Framework project. Here I will put all the needed steps to build a full featured web project.
+At the milestone, it's desired to have:
+ - Default project structure
+ - Layout and database support
+ - Admin module
+ - Multi-language support
+ - User management
+At my blog, you'll find the developer notes and comments about this project. See http://frameweb.blogspot.com
