@@ -1,8 +1,11 @@
-<h2>Languages</h2>
+<h2><?php echo $this->translate('Languages') ?></h2>
 <?php if (count($this->languages)) : ?>
 <ul>
     <?php foreach ($this->languages as $code => $name) : ?>
-    <li><?php if ($code == $this->language) : ?><?php echo $name ?><?php else : ?><a href="<?php echo $this->url(array('language' => $code), 'default') ?>"><?php echo $name ?><?php endif ?></a></li>
+    <li>
+        <?php if ($code == $this->language) : ?><?php echo $this->translate($name) ?>
+        <?php else : ?><a href="<?php echo $this->url(array('language' => $code), 'default') ?>"><?php echo $this->translate($name) ?><?php endif ?></a>
+    </li>
     <?php endforeach ?>
 </ul>
 <?php endif ?>
